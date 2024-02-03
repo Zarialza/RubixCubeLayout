@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube Layount 2d</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="faces" id="face1">
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+        </div>
+        <div class="faces" id="face2">
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+        </div>
+        <div class="faces" id="face3">
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+        </div>
+        <div class="faces" id="face4">
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+        </div>
+        <div class="faces" id="face5">
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+        </div>
+        <div class="faces" id="face6">
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+          <div class="cubes"></div>
+        </div>
+      </div>
+      <div class="choices">
+        <button class="red" onclick="setSelectedFace('red')"></button>
+        <button class="green" onclick="setSelectedFace('green')"></button>
+        <button class="blue" onclick="setSelectedFace('blue')"></button>
+
+        <button class="orange" onclick="setSelectedFace('orange')"></button>
+        <button class="yellow" onclick="setSelectedFace('yellow')"></button>
+        <button class="grey" onclick="setSelectedFace('grey')"></button>
+      </div>
+    </div>
+    <div class="submit_reset">
+      <button class="submit" onclick="submit()">Submit</button>
+      <button class="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
