@@ -123,6 +123,11 @@
   transition: 0.5s;
   background-color: rgb(255, 168, 168);
 }
+.random {
+  transition: 0.5s;
+  background-color: rgb(168, 168, 255);
+}
+
 .submit:hover {
   background-color: green;
   color: white;
@@ -130,5 +135,10 @@
 
 .reset:hover {
   background-color: red;
+  color: white;
+}
+
+.random:hover {
+  background-color: blue;
   color: white;
 }

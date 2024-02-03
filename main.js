@@ -76,3 +76,43 @@ function collectColors() {
   console.log("Face 5 Colors:", face5Color);
   console.log("Face 6 Colors:", face6Color);
 }
+
+function randomize() {
+  const colors = ["red", "blue", "green", "yellow", "orange", "grey"];
+  const face1Cubes = document.querySelectorAll("#face1 .cubes");
+  const face2Cubes = document.querySelectorAll("#face2 .cubes");
+  const face3Cubes = document.querySelectorAll("#face3 .cubes");
+  const face4Cubes = document.querySelectorAll("#face4 .cubes");
+  const face5Cubes = document.querySelectorAll("#face5 .cubes");
+  const face6Cubes = document.querySelectorAll("#face6 .cubes");
+
+  face1Cubes.forEach((cube) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    cube.style.backgroundColor = randomColor;
+  });
+
+  face2Cubes.forEach((cube) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    cube.style.backgroundColor = randomColor;
+  });
+
+  face3Cubes.forEach((cube) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    cube.style.backgroundColor = randomColor;
+  });
+
+  face4Cubes.forEach((cube) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    cube.style.backgroundColor = randomColor;
+  });
+
+  face5Cubes.forEach((cube) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    cube.style.backgroundColor = randomColor;
+  });
+
+  face6Cubes.forEach((cube) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    cube.style.backgroundColor = randomColor;
+  });
+}
