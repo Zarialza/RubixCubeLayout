@@ -86,33 +86,96 @@ function randomize() {
   const face5Cubes = document.querySelectorAll("#face5 .cubes");
   const face6Cubes = document.querySelectorAll("#face6 .cubes");
 
+  const colorCount = {};
+
   face1Cubes.forEach((cube) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     cube.style.backgroundColor = randomColor;
+
+    if (colorCount[randomColor] === undefined || colorCount[randomColor] < 9) {
+      cube.style.backgroundColor = randomColor;
+      colorCount[randomColor] = (colorCount[randomColor] || 0) + 1;
+    } else {
+      const unusedColors = colors.filter((color) => colorCount[color] < 9);
+      const newRandomColor =
+        unusedColors[Math.floor(Math.random() * unusedColors.length)];
+      cube.style.backgroundColor = newRandomColor;
+      colorCount[newRandomColor] = (colorCount[newRandomColor] || 0) + 1;
+    }
   });
 
   face2Cubes.forEach((cube) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     cube.style.backgroundColor = randomColor;
+    if (colorCount[randomColor] === undefined || colorCount[randomColor] < 9) {
+      cube.style.backgroundColor = randomColor;
+      colorCount[randomColor] = (colorCount[randomColor] || 0) + 1;
+    } else {
+      const unusedColors = colors.filter((color) => colorCount[color] < 9);
+      const newRandomColor =
+        unusedColors[Math.floor(Math.random() * unusedColors.length)];
+      cube.style.backgroundColor = newRandomColor;
+      colorCount[newRandomColor] = (colorCount[newRandomColor] || 0) + 1;
+    }
   });
 
   face3Cubes.forEach((cube) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     cube.style.backgroundColor = randomColor;
+    if (colorCount[randomColor] === undefined || colorCount[randomColor] < 9) {
+      cube.style.backgroundColor = randomColor;
+      colorCount[randomColor] = (colorCount[randomColor] || 0) + 1;
+    } else {
+      const unusedColors = colors.filter((color) => colorCount[color] < 9);
+      const newRandomColor =
+        unusedColors[Math.floor(Math.random() * unusedColors.length)];
+      cube.style.backgroundColor = newRandomColor;
+      colorCount[newRandomColor] = (colorCount[newRandomColor] || 0) + 1;
+    }
   });
 
   face4Cubes.forEach((cube) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     cube.style.backgroundColor = randomColor;
+    if (colorCount[randomColor] === undefined || colorCount[randomColor] < 9) {
+      cube.style.backgroundColor = randomColor;
+      colorCount[randomColor] = (colorCount[randomColor] || 0) + 1;
+    } else {
+      const unusedColors = colors.filter((color) => colorCount[color] < 9);
+      const newRandomColor =
+        unusedColors[Math.floor(Math.random() * unusedColors.length)];
+      cube.style.backgroundColor = newRandomColor;
+      colorCount[newRandomColor] = (colorCount[newRandomColor] || 0) + 1;
+    }
   });
 
   face5Cubes.forEach((cube) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     cube.style.backgroundColor = randomColor;
+    if (colorCount[randomColor] === undefined || colorCount[randomColor] < 9) {
+      cube.style.backgroundColor = randomColor;
+      colorCount[randomColor] = (colorCount[randomColor] || 0) + 1;
+    } else {
+      const unusedColors = colors.filter((color) => colorCount[color] < 9);
+      const newRandomColor =
+        unusedColors[Math.floor(Math.random() * unusedColors.length)];
+      cube.style.backgroundColor = newRandomColor;
+      colorCount[newRandomColor] = (colorCount[newRandomColor] || 0) + 1;
+    }
   });
 
   face6Cubes.forEach((cube) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     cube.style.backgroundColor = randomColor;
+    if (colorCount[randomColor] === undefined || colorCount[randomColor] < 9) {
+      cube.style.backgroundColor = randomColor;
+      colorCount[randomColor] = (colorCount[randomColor] || 0) + 1;
+    } else {
+      const unusedColors = colors.filter((color) => colorCount[color] < 9);
+      const newRandomColor =
+        unusedColors[Math.floor(Math.random() * unusedColors.length)];
+      cube.style.backgroundColor = newRandomColor;
+      colorCount[newRandomColor] = (colorCount[newRandomColor] || 0) + 1;
+    }
   });
 }
